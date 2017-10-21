@@ -1,0 +1,22 @@
+/***1、布局***/
+@import "festival.css";
+@import "top.css";
+@import "topMain.css";
+@import "banner.css";
+@import "seckill.css";
+@import "shopping_guide.css";
+@import "header_hide.css";
+@import "leftsidebar.css";
+.w{
+    /*宽度，元素水平居中对齐*/
+    width:1190px;
+    margin:0 auto;
+    /*测试属性*/
+}
+body{
+    font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+    color:#666;
+}
+a{
+    text-decoration: none;
+}

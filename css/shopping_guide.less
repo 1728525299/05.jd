@@ -1,0 +1,270 @@
+#shopping_guide{
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+}
+#mian{
+  margin-top: 10px;
+  height: 440px;
+  &>div{
+    width: 390px;
+    height: 100%;
+    float: left;
+    position: relative;
+    &>.top{
+      width: 100%;
+      height: 55px;
+      &>h3{
+        position: absolute;
+        left: 46px;
+        top: 12px;
+        font-weight: 100;
+        font-size: 24px ;
+        color: #fff;
+      }
+      &>a{
+        position: absolute;
+        right:20px;
+        top:20px;
+        font-size: 13px;
+        color: #fff;
+        i{
+          text-align: center;
+          padding-left: 2px;
+          margin-left: 5px;
+          width: 8px;
+          height: 8px;
+          border: 1px solid #fff;
+          box-sizing: border-box;
+          border-radius:50%;
+        }
+      }
+    }
+  }
+  //发现好货
+  .goods{
+    background: #fff;
+    .top{
+      background: #3c8d96;
+    }
+    .btm{
+      ul{
+        display: block;
+        width: 370px;
+        height: 363px;
+        margin: 10px 0 0 10px;
+        .li1{
+          background: url("../img/shoppGuide/goods1.png") no-repeat 98px 38px;
+        }
+        .li2{
+          background: url("../img/shoppGuide/goods2.png") no-repeat 98px 38px;
+        }
+        .li3{
+           background: url("../img/shoppGuide/goods3.png") no-repeat 98px 38px;
+         }
+        .li4{
+          background: url("../img/shoppGuide/goods4.png") no-repeat 98px 38px;
+        }
+        .li5{
+          background: url("../img/shoppGuide/goods5.png") no-repeat 98px 38px;
+        }
+        .li6{
+          background: url("../img/shoppGuide/goods6.png") no-repeat 98px 38px;
+        }
+
+        li {
+          float: left;
+          width: 184.5px;
+          height: 120.3px;
+          transition: background-position 0.3s linear;
+          //让背景图右移10个像素
+          &:hover {
+            background-position: 88px 38px;
+          }
+          &:nth-of-type(odd) {
+            border-right: 1px solid #e7e7e7;
+            border-bottom: 1px solid #e7e7e7;
+          }
+          &:nth-of-type(even) {
+            border-bottom: 1px solid #e7e7e7;
+          }
+          &:nth-of-type(5), &:nth-of-type(6) {
+            border-bottom: none;
+          }
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            b{
+              display: block;
+              width: 70px;
+              height: 30px;
+              font-size: 14px;
+              color: #3c8d96;
+               padding-top: 10px ;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //会买专辑
+  .album{
+    margin: 0 10px;
+    background: #fff;
+    position: relative;
+    .top{
+      background: #703e84;
+    }
+    .btm{
+
+      div{
+        width: 360px;
+        height: 159px;
+        margin-top: 15px;
+        margin-left: 15px;
+        &:first-child{
+          border-bottom: 1px solid #eee;
+        }
+        a {
+          display: block;
+          width: 100%;
+          height:100%;
+
+        }
+        p {
+          color: #666;
+          font-size: 13px;
+        }
+        ul{
+          margin-top: 20px;
+          li{
+            display: block;
+            float: left;
+            width: 110px;
+            height: 110px;
+            &:nth-of-type(2){
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+    .rgt_pointer{
+      position: absolute;
+      bottom:10px;
+      left: 160px;
+      span{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #342a2d;
+        &:hover{
+          background-color: #e01222;
+          cursor: pointer;
+        }
+      }
+      span.curent{
+        background-color: #e01222;
+      }
+    }
+  }
+  //购物指南
+  .leaderboard{
+    .top{
+      background: #e66805;
+    }
+    .btm{
+      width: 390px;
+      height: 385px;
+      background: #fff;
+      .tab{
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid #eee;
+        li{
+          float: left;
+          width: 77.2px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border-left: 1px solid #eee;
+          &.linerbtm{
+            border-bottom: 2px solid #f10214;
+          }
+          &:first-child{
+            border-left: none;
+          }
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #666;
+            &:hover{
+              color: #f10214;
+            }
+          }
+        }
+      }
+      .content{
+        width: 390px;
+        height: 355px;
+        position: relative;
+        .list {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 370px;
+          height: 337px;
+          margin-top: 10px;
+          margin-left: 10px;
+          background: #fff;
+          display: none;
+          &.current {
+            display: block;
+          }
+          ul {
+            width: 100%;
+            height: 100%;
+            li {
+              float: left;
+              width: 122.5px;
+              height: 167px;
+              text-align: center;
+              &:nth-of-type(1), &:nth-of-type(2) {
+                border-bottom: 1px solid #eee;
+                border-right: 1px solid #eee;
+              }
+              &:nth-of-type(4), &:nth-of-type(5) {
+                border-right: 1px solid #eee;
+              }
+              &:nth-of-type(3) {
+                border-bottom: 1px solid #eee;
+              }
+              a {
+                display: block;
+                height: 100%;
+                width: 100%;
+                color: #666;
+                &:hover {
+                  color: #f10214;
+                }
+                img {
+                  margin-top: 15px;
+                }
+                p {
+                  margin-top: 10px;
+                  width: 122px;
+                  height: 32px;
+                  overflow: hidden;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

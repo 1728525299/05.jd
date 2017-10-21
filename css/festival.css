@@ -1,0 +1,20 @@
+#festival {
+  background-color: #FF99B6;
+  position: relative;
+}
+#festival img {
+  display: block;
+  margin: 0 auto;
+}
+#festival .close {
+  font-size: 24px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 100px;
+  top: 0px;
+  background-color: #be798c;
+  opacity: 0.5;
+  cursor: pointer;
+}

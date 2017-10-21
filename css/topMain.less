@@ -1,0 +1,201 @@
+#top_main{
+  background-color: #F6F6F6;
+  position: relative;
+ // z-index: -1;
+  .w{
+    padding:10px 0;
+    height: 140px;
+    position: relative;
+
+    .nav-rgt{
+      position: absolute;
+      right:0;
+      top:116px;
+    }
+    //4.nav
+    .nav{
+      position: absolute;
+      top: 118px;
+      left:180px;
+      width: 790px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+
+      li{
+        float: left;
+        padding-left: 25px;
+        padding-right: 8px;
+        &:nth-of-type(8),&:nth-of-type(4){
+          padding-right:0px;
+        }
+        a{
+          color: #4b4a4a;
+          font-size: 15px;
+          font-weight: 600;
+          &:hover {
+            color: #8B0000;
+          }
+          .line{
+            margin-right: 25px;
+            font-weight: normal;
+            color: #ccc;
+          }
+        }
+      }
+    }
+
+    //3.shopping-car购物车
+    .shopping-cart{
+      position: absolute;
+      top: 26px;
+      right: 50px;
+      &:hover .hide{
+        height: 70px;
+        border: 1px solid #e3e4e5;
+      }
+      .car-top{
+        width: 190px;
+        height: 35px;
+        background-color: #fff;
+        border: 1px solid #e3e4e5;
+        position: relative;
+      }
+      &:hover .car-top{
+        border-bottom: 0;
+        z-index: 200;
+      }
+      .car{
+       padding-left: 40px;
+        position: relative;
+        top: 4px;
+      }
+      a{
+        color: #f00;
+      }
+      .sup{
+        position: relative;
+        top: -4px;
+        color: #fff;
+        padding: 0 2px;
+        background-color: #f00;
+        border-radius: 50%;
+      }
+      .hide{
+        position: absolute;
+        top:34px;
+        right: 0px;
+        width: 310px;
+        height: 0px;
+        border: 0;
+        overflow: hidden;
+        background-color: #fff;
+        &:hover{
+          z-index: 50;
+        }
+        i{
+          display: block;
+          float: left;
+          padding: 13px 10px 5px 33px;
+          overflow: hidden;
+          width: 54px;
+          height: 50px;
+        }
+        span{
+          padding-top: 30px;
+          padding-right: 15px;
+          float: right;
+        }
+      }
+    }
+
+    //1.LOG
+    .top-log {
+      position: absolute;
+      top: -31px;
+      left: 0;
+      float: left;
+      img{
+        height: 189px;
+        width: 190px;
+      }
+    }
+    #search_box{
+      /*左浮动，宽度，min-高度，左右外边距*/
+      position: absolute;
+      top: 26px;
+      left: 318px;
+      float:left;
+      width:500px;
+      min-height:30px;
+      margin:0 80px 0 40px;
+
+      .search{
+        /*宽度，高度，背景颜色*/
+        position: absolute;
+        width:550px;
+        height:30px;
+        background:#E4393C;
+        /*边框*/
+        border:3px solid #E4393C;
+          .photo {
+            position: absolute;
+            left: 420px;
+            top: 7px;
+            width: 20px;
+            height: 15px;
+            background-image: url("../img/sprite-photo-search.png");
+            //无效
+             &:hover{
+               cursor: pointer;
+               background-image: url("../img/sprite-photo-search.png");
+               background-position-x:80px;
+             }
+          }
+        .txtSearch{
+          /*宽度，高度，去掉边框*/
+          width:460px;
+          height:30px;
+          border:0;
+          /*取消默认padding*/
+          padding:0;
+          outline: 0;
+        }
+        button{
+          /*宽度，高度，取消边框，背景颜色*/
+          width:80px;
+          height:28px;
+          border:0;
+          background:#E4393C;
+          /*文字大小，加粗，颜色*/
+          font-size:14px;
+          font-weight:bold;
+          color:#fff;
+        }
+      }
+      // 2.热词hot-words
+      .hot-words{
+       position: absolute;
+        margin-top: 45px;
+        width: 550px;
+        height: 20px;
+        overflow: hidden;
+        li{
+          float: left;
+          padding-right: 7px;
+          &:first-child a{
+            color: #f00;
+          }
+          a{
+            font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+            color:#666;
+            &:hover {
+              color: #8B0000;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
